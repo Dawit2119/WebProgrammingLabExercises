@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>A Simple Calculator</title>
+<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <input type="text"  value="0" class="form-control" id="inputLabel">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col"><button class="btn btn-secondary" onclick="pushBtn(this)">7</button></div>
+            <div class="col"><button class="btn btn-secondary" onclick="pushBtn(this)">8</button></div>
+            <div class="col"><button class="btn btn-secondary" onclick="pushBtn(this)">9</button></div>
+            <div class="col"><button class="btn btn-secondary" onclick="divide()">/</button></div>
+        </div>
+        <div class="row">
+            <div class="col"><button class="btn btn-secondary" onclick="pushBtn(this)">4</button></div>
+            <div class="col"><button class="btn btn-secondary" onclick="pushBtn(this)">5</button></div>
+            <div class="col"><button class="btn btn-secondary" onclick="pushBtn(this)">6</button></div>
+            <div class="col"><button class="btn btn-secondary" onclick="multiply()">*</button></div>
+        </div>
+        <div class="row">
+            <div class="col"><button class="btn btn-secondary" onclick="pushBtn(this)">1</button></div>
+            <div class="col"><button class="btn btn-secondary" onclick="pushBtn(this)">2</button></div>
+            <div class="col"><button class="btn btn-secondary" onclick="pushBtn(this)">3</button></div>
+            <div class="col"><button class="btn btn-secondary" onclick="subtract()">-</button></div>
+        </div>
+        <div class="row">
+            <div class="col"><button class="btn btn-secondary" onclick="pushBtn(this)">.</button></div>
+            <div class="col"><button class="btn btn-secondary" onclick="pushBtn(this)">0</button></div>
+            <div class="col"><button class="btn btn-secondary" onclick="pushBtn(this)">AC</button></div>
+            <div class="col"><button class="btn btn-secondary" onclick="Add()">+</button></div>
+        </div>
+        <div class="row">
+            <div class="col"><button class="btn btn-secondary" onclick="pushBtn(this)">sqrt</button></div>
+            <div class="col"><button class="btn btn-secondary" onclick="pushBtn(this)">X^2</button></div>
+            <div class="col"><button class="btn btn-secondary" onclick="pushBtn(this)">max</button></div>
+            <div class="col" ><button class="btn btn-secondary" onclick="pushBtn(this)">=</button></div>
+        </div>
+        <div class="row">
+            <div class="col"><button class="btn btn-secondary" onclick="pushBtn(this)">space</button></div>
+            <div class="col"><button class="btn btn-secondary" onclick="pushBtn(this)">X^3</button></div>
+            <div class="col"><button class="btn btn-secondary" onclick="pushBtn(this)">min</button></div>
+            <div class="col"><button class="btn btn-secondary" onclick="pushBtn(this)">back</button></div>
+        </div>
+    </div>
+ 
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
